@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../borradores y practicas/Styles/normalize.css" as="style">
+    <link rel="stylesheet" href="../borradores y practicas/Styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../borradores y practicas/Styles/borrador liquidaciones.css" as="style">
+    <link rel="stylesheet" href="../borradores y practicas/Styles/borrador liquidaciones.css">
+    <script defer src="../borradores y practicas/scripts/liquidacion.js" ></script>
+    <title>borrador liquidaciones</title>
+</head>
+<body class="contenedor">
+    <nav class="nav">
+        <div class="flex-content-1">
+            <div class="flex-child-1-1">
+                <img src="../capegra soft 2.0/images/Capegrasoft_espiga_icono.png" alt="Logo CaPeGra Soft">
+                <h2>CaPeGra&nbsp;Soft</h2>
+            </div>
+            <div class="flex-child-1-2">
+                <img src="../capegra soft 2.0/images/usuario.jpg" alt="Usuario">
+                <a href="../capegra soft 2.0/index.html"><img src="../capegra soft 2.0/images/logout.png" alt="Logout"></a>
+            </div>
+        </div>
+
+        <div class="grid-content-1">
+            <div class="grid-child-1-1"></div>
+            <div class="grid-child-1-2">
+                <div class="nav-botones">
+                    <h3>Liquidacion Mercaderia de Ingreso</h3>
+                    <ul class="flex-content-2">
+                        <li class="li activo">Datos de ingreso</li>
+                        <li class="li">Cuadro de analisis</li>
+                        <li class="li">Merma y costos</li>
+                        <li class="li">Liquidacion final</li>
+                        <a href="../capegra soft 2.0/inicio.html"><button><h4>Volver</h4></button></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-child-1-3"></div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="subcontenedor">
+            <div class="bloque activo">
+                <fieldset class="pestaña_1 fieldset-grid-1">
+                    <label class="cuil" for="nombre">C.U.I.L cliente</label>
+                    <input class="inpt_1_1" type="text" required>
+                    <label class="transp" for="nombre">Transporte</label>
+                    <input class="inpt_1_2" type="text" required>
+                    <label class="tipo" for="nombre">Tipo de grano</label>
+                    <select class="selector" name="tipo">
+                        <option value="sorgo">sorgo</option>
+                        <option value="soja">soja</option>
+                        <option value="maiz">maiz</option>
+                        <option value="trigo">trigo</option>
+                    </select>
+                    <label class="kg" for="nombre">Kilogramos iniciales</label>
+                    <input class="inpt_1_3" type="text" required>
+                    <label class="precio" for="nombre">Precio base (pesos)</label>
+                    <input class="inpt_1_4" type="text" readonly>
+                    <button class="boton-datos">Actualizar</button>
+                </fieldset>
+            </div>
+
+            <div class="bloque">
+                <form class="form-grid">
+                    <legend>Condicion</legend>
+                    <legend>Rubros</legend>
+                    <legend>Arbitraje</legend>
+                    <legend>Bonificaciones</legend>
+                    <legend>Rebajas</legend>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Granos Dañados</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Materia Extraña</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Granos Quebrados</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Granos Picados</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Olores Objetables</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Granos Amohosados</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Chamico</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro">Humedad</label>
+                    <input class="in_3 esp_2" type="text" required>
+                    <label for="" class="l-cuadro"></label>
+                    <label for="" class="l-cuadro"></label>
+                    <button class="boton-cuadro" type="reset">Limpiar Cuadro</button>
+                    <button class="boton-cuadro" type="submit">Calcular Cuadro de Analisis</button>
+                </form>
+            </div>
+
+            <div class="bloque">
+                <fieldset class="fieldset-grid-2">
+                    <h3 class="mermas">Mermas</h3>
+                    <label class="mer-hum" for="nombre">Merma por humedad (Kg)</label>
+                    <input class="inpt_2_1" type="text" required>
+                    <label class="mer-sec" for="nombre">Merma por secado (Kg)</label>
+                    <input class="inpt_2_2" type="text" required>
+                    <h3 class="costos">Costos de servicio</h3>
+                    <label class="pre-fle" for="nombre">Precio del flete ($)</label>
+                    <input class="inpt_2_3" type="text" required>
+                    <label class="pre-fum" for="nombre">Precio de fumigacion ($)</label>
+                    <input class="inpt_2_4" type="text" required>
+                    <label class="pre-sec" for="nombre">Precio del secado ($)</label>
+                    <input class="inpt_2_5" type="text" required>
+                    <label class="pre-alm" for="nombre">Precio del almacenaje ($)</label>
+                    <input class="inpt_2_6" type="text" required>
+                    <label class="dias-alm" for="nombre">Dias de almacenaje</label>
+                    <input class="inpt_2_7" type="text" required>
+                    <button class="boton_merma">Calcular</button>
+                </fieldset>
+            </div>
+            
+            <div class="bloque">
+                <fieldset class="fieldset-grid-3">
+                    <h3 class="resultado">Resultado del analisis</h3>
+                    <label class="cond" for="nombre">Condicion</label>
+                    <input class="inpt_4_1" type="text" readonly><br>
+                    <label class="grado" for="nombre">Grado de liquidacion</label>
+                    <input class="inpt_4_2" type="text" readonly><br>
+                    <label class="rebajas" for="nombre">Rebajas</label>
+                    <input class="inpt_4_3" type="text" readonly><br>
+                    <label class="pre-grado" for="nombre">Precio por grado ($)</label>
+                    <input class="inpt_4_4" type="text" readonly><br>
+                    <label class="factor" for="nombre">Factor</label>
+                    <input class="inpt_4_5" type="text" readonly><br>
+                    <label class="pr-fin-ton" for="nombre">Precio final por tonelada ($)</label>
+                    <input class="inpt_4_6" type="text" readonly><br>
+                    <h3 class="resultado_m">Resultado de mermas y costos</h3>
+                    <label class="kg-n" for="nombre">Kilogramos netos</label>
+                    <input class="inpt_4_7" type="text" readonly><br>
+                    <label class="costo-n" for="nombre">Costos netos ($)</label>
+                    <input class="inpt_4_8" type="text" readonly><br>
+                    <h3 class="liq-fin">Liquidacion final</h3>
+                    <input class="inpt_4_9" type="text" readonly><br>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="grid-content-footer">
+            <div class="grid-item-footer">
+                <img src="../capegra soft 2.0/images/Captura limpia.png" alt="Logo Empresa">
+            </div>
+            <h4 class="grid-item-footer">Contactenos:</h4>
+            <div class="grid-item-footer">
+                <a href=""><img src="../capegra soft 2.0/images/face.png" alt="facebook"></a>&nbsp;
+                <a href=""><img src="../capegra soft 2.0/images/twitter.png" alt="twitter"></a>&nbsp;
+                <a href=""><img src="../capegra soft 2.0/images/instagram.png" alt="instagram"></a>&nbsp;
+                <a href=""><img src="../capegra soft 2.0/images/linkedin.png" alt="linkedin"></a>&nbsp;
+                <a href=""><img src="../capegra soft 2.0/images/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <h6 class="grid-item-footer">Version: 1.0</h6>
+        </div>
+    </footer>
+</body>
+</html>
